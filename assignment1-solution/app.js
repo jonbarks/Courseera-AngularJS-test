@@ -1,24 +1,21 @@
-(function () {
-    'use strict';
+( function(){
 
-    angular.module('LunchCheckApp', [])
-        .controller('LunchCheckController', LunchCheckController);
+    angular.module("MyApp", [])
+        .controller("MyController", MyController);
 
-    LunchCheckController.$inject = ['$scope'];
+    MyController.$inject = ["$scope", "$filter"];
 
-    function LunchCheckController($scope) {
-        $scope.lunchMenuText = "";
-        $scope.salutation = "";
+    function MyController( $scope, $filter) {
 
-        $scope.checkLunchMenu = function () {
-            var arrayOfStrings = $scope.lunchMenuText.split(',');
-            if( arrayOfStrings.length === 1 && arrayOfStrings[0] === "")
-                 $scope.salutation = "Please enter data first";
-            else if( arrayOfStrings.length > 3)
-                $scope.salutation = "Too much!";
-            else
-                $scope.salutation = "Enjoy!";
-        };
+        $scope.inputText = "";
+        $scope.textLength = 0;
+        $scope.displayTextLength = function(){
+            $scope.textLength = $scope.inputText.length;
+        }
+        $scope.uppercaseText = function(){
+            var upCase = $filter('uppercase');
+            $scope.inputText = upCase($scope.inputText);
+        }
+
     }
-
 })();
