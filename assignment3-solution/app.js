@@ -36,12 +36,13 @@
             }).then(function (result) {
                 var allMenuItems = result.data.menu_items;
                 var foundItems = [];
-
+                if( searchTerm == undefined || searchTerm.length == 0)
+                    var findAll = true;
                 allMenuItems.forEach( function( item) {
-                    if( item.description.toLowerCase().indexOf( searchTerm.toLowerCase()) !== -1)
+                    if( findAll || item.description.toLowerCase().includes( searchTerm.toLowerCase()))
                         foundItems.push(item);
                 });
-                return foundItems; // return all while checking http
+                return foundItems;
 
             });
         }
