@@ -1,0 +1,23 @@
+
+<!--<ol>-->
+<!--<li ng-repeat="item in found.items">-->
+<!--    {{item.name}} : {{item.description}}-->
+<!--    <button ng-click="found.onRemove({index: $index});">Remove Item</button>-->
+<!--</li>-->
+<!--</ol>-->
+<p>
+<table class="container">
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        <tr ng-repeat="item in found.items">
+            <td> {{item.name}} </td>
+            <td> {{item.description}} </td>
+            <td> <button class="btn btn-warning" ng-click="found.onRemove({index: $index});">Remove Item</button> </td>
+        </tr>
+    </tbody>
+</table>
+</p>

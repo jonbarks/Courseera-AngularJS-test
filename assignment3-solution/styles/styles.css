@@ -49,4 +49,12 @@ input[type="text"] {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+
 }
+
+th,
+td {
+    border: 1px solid grey;
+    padding: 0.5em;
+}
+
