@@ -44,9 +44,10 @@
                 var allMenuItems = result.data.menu_items;
                 var foundItems = [];
                 if( searchTerm == undefined || searchTerm.length == 0)
-                    var findAll = true;
+                    return foundItems;
+
                 allMenuItems.forEach( function( item) {
-                    if( findAll || item.description.toLowerCase().includes( searchTerm.toLowerCase()))
+                    if( item.description.toLowerCase().includes( searchTerm.toLowerCase()))
                         foundItems.push(item);
                 });
                 return foundItems;
