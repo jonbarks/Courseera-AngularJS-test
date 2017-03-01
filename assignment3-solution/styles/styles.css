@@ -55,6 +55,6 @@ input[type="text"] {
 th,
 td {
     border: 1px solid grey;
-    padding: 0.5em;
+    text-align: center;
 }
 
