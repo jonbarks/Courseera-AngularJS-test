@@ -11,10 +11,12 @@
     function NarrowItDownController( MenuSearchService){
         var self = this;
         self.searchTerm;
+        self.found = [];
         self.narrowItDown = function(){
             var promise = MenuSearchService.getMatchedMenuItems( self.searchTerm);
             promise.then(function (response) {
                 self.found = response;
+                self.setShowNotFoundMessage();
             })
             .catch(function (error) {
                 console.log("Something went terribly wrong.");
@@ -22,7 +24,12 @@
         }
         self.removeItem = function (index){
             self.found.splice(index, 1);
+            self.setShowNotFoundMessage();
         }
+        self.setShowNotFoundMessage = function(){
+            self.showNotFoundMessage = self.found.length == 0 ? true : false;
+        }
+        self.showNotFoundMessage = false;
     }
 
     MenuSearchService.$inject = ['$http', 'ApiBasePath'];

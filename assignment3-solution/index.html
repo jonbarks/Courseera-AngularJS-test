@@ -15,7 +15,7 @@
     <div class="form-group">
         <input type="text" placeholder="search term" class="form-control" ng-model="nidCtrl.searchTerm">
         <button class="btn btn-primary" ng-click="nidCtrl.narrowItDown()">Narrow It Down For Me!</button>
-        <div class="alert alert-warning" ng-if="nidCtrl.found.length == 0">Nothing found</div>
+        <div class="alert alert-warning" ng-if="nidCtrl.showNotFoundMessage">Nothing found</div>
         <found-items
                items="nidCtrl.found"
                on-remove="nidCtrl.removeItem(index)"
