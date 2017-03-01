@@ -64,7 +64,7 @@
                 onRemove: '&'
             },
             controller: FoundItemsDirectiveController,
-            controllerAs: 'found',
+            controllerAs: 'foundItemsDirectiveCtrl',
             bindToController: true
         };
 

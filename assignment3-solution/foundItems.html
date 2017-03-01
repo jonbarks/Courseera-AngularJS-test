@@ -1,16 +1,16 @@
 <table class="container">
     <tbody>
         <tr>
-            <th>{{found.items.length}} Dishes</th>
+            <th>{{foundItemsDirectiveCtrl.items.length}} Dishes</th>
             <th>Name</th>
             <th>Description</th>
             <th>Action</th>
         </tr>
-        <tr ng-repeat="item in found.items">
+        <tr ng-repeat="item in foundItemsDirectiveCtrl.items">
             <td> {{$index+1}}</td>
             <td> {{item.name}} </td>
             <td> {{item.description}} </td>
-            <td> <button class="btn btn-warning" ng-click="found.onRemove({index: $index});">Don't want this one!</button> </td>
+            <td> <button class="btn btn-warning" ng-click="foundItemsDirectiveCtrl.onRemove({index: $index});">Don't want this one!</button> </td>
         </tr>
     </tbody>
 </table>
