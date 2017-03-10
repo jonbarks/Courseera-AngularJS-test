@@ -16,7 +16,7 @@
         // Home page
             .state('home', {
                 url: '/',
-                template: 'Home <br/><a ui-sref="categoryList">categories</a>'
+                template: '<a ui-sref="categoryList">Menu Categories</a>'
             })
 
             .state('categoryList', {
