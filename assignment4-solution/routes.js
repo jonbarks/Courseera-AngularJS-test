@@ -30,21 +30,17 @@
                 }
             })
 
-            ;
-            //.state('items', {
-            //    url: '/items/{shortName}',
-            //    templateUrl: 'item-detail.template.html',
-            //    controller: 'ItemDetailController as itemDetail',
-            //    resolve: {
-            //        items: ['$stateParams', 'MenuDataService',
-            //            function ($stateParams, MenuDataService) {
-            //                return MenuDataService.getItemsForCategory()
-            //                    .then(function (items) {
-            //                        return items[$stateParams.shortName];
-            //                    });
-            //            }]
-            //    }
-            //});
+            .state('items', {
+                url: '/items/{shortName}',
+                templateUrl: 'itemsList.template.html',
+                controller: 'ItemsController as itemsList',
+                resolve: {
+                    items: ['$stateParams', 'MenuDataService',
+                        function ($stateParams, MenuDataService) {
+                            return MenuDataService.getItemsForCategory( $stateParams.shortName)
+                        }]
+                }
+            });
     }
 
 })();

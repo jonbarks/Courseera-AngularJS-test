@@ -16,13 +16,13 @@
             });
         }
 
-        this.getItemsForCategory = function ( catagoryShortName) {
+        this.getItemsForCategory = function ( categoryShortName) {
             return $http( {
                 method: "GET",
-                url: ("https://davids-restaurant.herokuapp.com/menu_items.json?category=" + catagoryShortName)
+                url: ("https://davids-restaurant.herokuapp.com/menu_items.json?category=" + categoryShortName)
             }).then(function (result) {
-                var categories = result.data.menu_items;
-                return categories;
+                var items = result.data.menu_items;
+                return items;
             });
         }
     }
