@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signup.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/signup.service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -39,18 +39,18 @@
       <file leaf-file-name="signup.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/public/signup/signup.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myinfo.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myinfo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/public/signup/myinfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="699">
+              <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -59,18 +59,8 @@
       <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/public/signup/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/menu.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="619">
+              <caret line="72" column="62" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -103,6 +93,8 @@
       <find>public.menuitems</find>
       <find>herokuapp</find>
       <find>Info</find>
+      <find>isSisgned</find>
+      <find>userSi</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -126,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/public/signup/signup.html" />
         <option value="$PROJECT_DIR$/src/common/signup.service.js" />
         <option value="$PROJECT_DIR$/src/public/signup/signup.controller.js" />
+        <option value="$PROJECT_DIR$/src/public/signup/myinfo.html" />
       </list>
     </option>
   </component>
@@ -911,12 +904,12 @@
       <workItem from="1489619072717" duration="3319000" />
       <workItem from="1489707461632" duration="1211000" />
       <workItem from="1489797201151" duration="7394000" />
-      <workItem from="1489850633920" duration="21132000" />
+      <workItem from="1489850633920" duration="27724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33056000" />
+    <option name="totallyTimeSpent" value="39648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1274,14 +1267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/menu.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/common.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1298,10 +1283,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/signup/myinfo.html">
+    <entry file="file://$PROJECT_DIR$/src/common/menu.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="306">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/signup/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="72" column="62" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -1314,26 +1307,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/signup/signup.html">
+    <entry file="file://$PROJECT_DIR$/src/common/signup.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/public/signup/signup.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/signup.service.js">
+    <entry file="file://$PROJECT_DIR$/src/public/signup/myinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="699">
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -70,8 +70,8 @@
             <div class="form-group">
                 <div class="col-lg-4 col-md-4 col-sm-4"></div>
                 <div ng-show="signupCtrl.signupAttempted">
-                    <span ng-show="signupCtrl.userSignedUp">Your information has been saved</span>
-                    <span ng-show="!signupCtrl.userSignedUp">No such menu item exists</span>
+                    <span ng-show="signupCtrl.isUserSignedUp()">Your information has been saved</span>
+                    <span ng-show="!signupCtrl.isUserSignedUp()">No such menu item exists</span>
                 </div>
             </div>
         </fieldset>

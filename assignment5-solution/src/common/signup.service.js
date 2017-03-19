@@ -13,17 +13,21 @@ function SignupService($http, ApiPath) {
 
         var promise = $http.get(ApiPath + '/menu_items/' + itemName + '.json');
         return promise;
+    };
 
-    //
-        // return $http.get(ApiPath + '/menu_items/' + itemName + '.json')
-    //    .then( function successCallback(response) {
-    //  return response.data;
-    //}
-    //);
-  };
+    service.userSignedUp = false;
+
+    service.setUserIsSignedUp = function( signedUp){
+        service.userSignedUp = signedUp;
+    }
+
+    service.isUserSignedUp = function( ){
+        return service.userSignedUp;
+    }
 
     service.saveUser = function( user){
         service.user = user;
+        service.setUserIsSignedUp( true);
     }
     service.getUser = function( ){
         return service.user;
