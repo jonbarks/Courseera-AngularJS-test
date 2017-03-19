@@ -1,8 +1,10 @@
 <div class="container" ng-controller="SignupController as signupCtrl">
-    <div col-xs-12 col-sm-12 ng-show="!signupCtrl.isUserSignedUp()">
-        Not Signed Up Yet. Sign up Now!
+    <div class="signup" col-xs-12 col-sm-12 ng-if="!signupCtrl.isUserSignedUp()">
+        <span> Not Signed Up Yet.
+            <a ui-sref="public.signup">Sign Up Now!</a>
+        </span>
     </div>
-    <div col-xs-12 col-sm-12 ng-show="signupCtrl.isUserSignedUp()">
+    <div col-xs-12 col-sm-12 ng-if="signupCtrl.isUserSignedUp()">
         <div class="signup form-horizontal" >
             <fieldset>
                 <legend>You are signed up for the newsletter</legend>
