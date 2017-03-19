@@ -3,6 +3,17 @@
   box-shadow: 0 0 50px #3F0C1F;
   border: 2px solid #3F0C1F;
 }
+.signup {
+    background: #f6b319;
+    padding: 10px;
+    color: #951C49;
+}
+.ng-touched.ng-valid {
+    border: 2px green solid;
+}
+.ng-touched.ng-invalid {
+    border: 2px red solid;
+}
 
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
